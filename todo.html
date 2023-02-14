@@ -9,18 +9,13 @@
 </head>
 <body>
   <h1>ToDoList</h1>
-  <div id="list" class="ListCell">
-    <p id="title">밥먹기</p>
-    <button id="TextLine">했음</button>
-    <button id="close">안할거임</button>
+  <input type="text" id="inputText" value="" placeholder="입력하세요.">
+  <button id="create">목록 생성</button>
+  <div id="box">
+    <p id="inputResult"></p>
   </div>
-  <script>
-    document.getElementById('close').addEventListener('click', function(){
-      document.getElementById('list').style.display = 'none';
-    })
-    document.getElementById('TextLine').addEventListener('click', function(){
-      document.getElementById('title').style.textDecorationLine = "line-through";
-    })
+
+  <script src="todo.js">
   </script>
 </body>
 </html>
